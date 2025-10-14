@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Input Methods</title>
+</head>
+<body>
+	<h2>Different Ways of Taking Input</h2>
+	<script>
+
+	let name = prompt("Enter your name:");
+	document.write("Hello...."+ name + " Good afternoon!"+"<br>");
+	
+	document.write("Name: "+'<input type="text" id="txtInput" placeholder="Type something">');
+	document.write('<button onclick="showInput()">Submit</button><br>');
+
+	function showInput(){
+	 let val = document.getElementById("txtInput").value;
+	 document.write("You typed: " + val + " (from input box)<br>");
+	 }
+
+	</script>
+</body>
+</html>   
